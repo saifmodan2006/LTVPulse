@@ -1,0 +1,436 @@
+[
+  {
+    "customer_id": "CUST0001",
+    "name": "Customer 1",
+    "signup_date": "2025-11-24",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0002",
+    "name": "Customer 2",
+    "signup_date": "2026-01-15",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0003",
+    "name": "Customer 3",
+    "signup_date": "2025-04-25",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0004",
+    "name": "Customer 4",
+    "signup_date": "2025-02-22",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0005",
+    "name": "Customer 5",
+    "signup_date": "2025-08-05",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0006",
+    "name": "Customer 6",
+    "signup_date": "2025-02-17",
+    "region": "South",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0007",
+    "name": "Customer 7",
+    "signup_date": "2025-09-16",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0008",
+    "name": "Customer 8",
+    "signup_date": "2025-04-12",
+    "region": "West",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0009",
+    "name": "Customer 9",
+    "signup_date": "2025-08-18",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0010",
+    "name": "Customer 10",
+    "signup_date": "2026-01-24",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0011",
+    "name": "Customer 11",
+    "signup_date": "2025-08-05",
+    "region": "East",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0012",
+    "name": "Customer 12",
+    "signup_date": "2025-03-21",
+    "region": "South",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0013",
+    "name": "Customer 13",
+    "signup_date": "2025-02-22",
+    "region": "North",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0014",
+    "name": "Customer 14",
+    "signup_date": "2025-02-19",
+    "region": "East",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0015",
+    "name": "Customer 15",
+    "signup_date": "2025-11-06",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0016",
+    "name": "Customer 16",
+    "signup_date": "2026-01-09",
+    "region": "West",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0017",
+    "name": "Customer 17",
+    "signup_date": "2025-03-05",
+    "region": "West",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0018",
+    "name": "Customer 18",
+    "signup_date": "2025-10-10",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0019",
+    "name": "Customer 19",
+    "signup_date": "2025-11-13",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0020",
+    "name": "Customer 20",
+    "signup_date": "2025-04-09",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0021",
+    "name": "Customer 21",
+    "signup_date": "2025-12-05",
+    "region": "South",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0022",
+    "name": "Customer 22",
+    "signup_date": "2025-02-10",
+    "region": "South",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0023",
+    "name": "Customer 23",
+    "signup_date": "2025-07-14",
+    "region": "East",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0024",
+    "name": "Customer 24",
+    "signup_date": "2025-11-22",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0025",
+    "name": "Customer 25",
+    "signup_date": "2025-07-09",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0026",
+    "name": "Customer 26",
+    "signup_date": "2025-12-10",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0027",
+    "name": "Customer 27",
+    "signup_date": "2025-12-16",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0028",
+    "name": "Customer 28",
+    "signup_date": "2025-11-22",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0029",
+    "name": "Customer 29",
+    "signup_date": "2026-01-09",
+    "region": "South",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0030",
+    "name": "Customer 30",
+    "signup_date": "2025-08-25",
+    "region": "West",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0031",
+    "name": "Customer 31",
+    "signup_date": "2025-11-24",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0032",
+    "name": "Customer 32",
+    "signup_date": "2025-06-16",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0033",
+    "name": "Customer 33",
+    "signup_date": "2025-01-17",
+    "region": "East",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0034",
+    "name": "Customer 34",
+    "signup_date": "2025-05-18",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0035",
+    "name": "Customer 35",
+    "signup_date": "2025-10-18",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0036",
+    "name": "Customer 36",
+    "signup_date": "2025-12-02",
+    "region": "West",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0037",
+    "name": "Customer 37",
+    "signup_date": "2025-11-26",
+    "region": "West",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0038",
+    "name": "Customer 38",
+    "signup_date": "2025-05-16",
+    "region": "South",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0039",
+    "name": "Customer 39",
+    "signup_date": "2026-01-17",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0040",
+    "name": "Customer 40",
+    "signup_date": "2025-10-27",
+    "region": "West",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0041",
+    "name": "Customer 41",
+    "signup_date": "2025-07-24",
+    "region": "East",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0042",
+    "name": "Customer 42",
+    "signup_date": "2025-03-12",
+    "region": "West",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0043",
+    "name": "Customer 43",
+    "signup_date": "2026-01-22",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0044",
+    "name": "Customer 44",
+    "signup_date": "2025-03-20",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0045",
+    "name": "Customer 45",
+    "signup_date": "2025-08-05",
+    "region": "North",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0046",
+    "name": "Customer 46",
+    "signup_date": "2025-07-15",
+    "region": "West",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0047",
+    "name": "Customer 47",
+    "signup_date": "2025-05-09",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0048",
+    "name": "Customer 48",
+    "signup_date": "2026-01-05",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0049",
+    "name": "Customer 49",
+    "signup_date": "2025-10-02",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0050",
+    "name": "Customer 50",
+    "signup_date": "2025-06-24",
+    "region": "North",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0051",
+    "name": "Customer 51",
+    "signup_date": "2025-08-11",
+    "region": "South",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0052",
+    "name": "Customer 52",
+    "signup_date": "2025-01-02",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0053",
+    "name": "Customer 53",
+    "signup_date": "2026-01-26",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0054",
+    "name": "Customer 54",
+    "signup_date": "2025-02-24",
+    "region": "East",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0055",
+    "name": "Customer 55",
+    "signup_date": "2025-09-17",
+    "region": "South",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0056",
+    "name": "Customer 56",
+    "signup_date": "2025-07-11",
+    "region": "South",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0057",
+    "name": "Customer 57",
+    "signup_date": "2026-02-03",
+    "region": "North",
+    "plan_type": "Premium"
+  },
+  {
+    "customer_id": "CUST0058",
+    "name": "Customer 58",
+    "signup_date": "2025-06-15",
+    "region": "West",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0059",
+    "name": "Customer 59",
+    "signup_date": "2025-02-27",
+    "region": "East",
+    "plan_type": "Basic"
+  },
+  {
+    "customer_id": "CUST0060",
+    "name": "Customer 60",
+    "signup_date": "2025-05-03",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": null,
+    "name": "Ghost User",
+    "signup_date": "2025-02-01",
+    "region": "North",
+    "plan_type": "Free"
+  },
+  {
+    "customer_id": "CUST0004",
+    "name": "Customer 4",
+    "signup_date": "2025-02-22",
+    "region": "North",
+    "plan_type": "Premium"
+  }
+]

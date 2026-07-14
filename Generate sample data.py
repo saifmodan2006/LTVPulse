@@ -1,15 +1,3 @@
-"""
-generate_sample_data.py
-------------------------
-Creates the three raw files the app expects:
-  customer_profiles.json
-  order_history.csv
-  web_traffic_logs.csv
-
-Deliberately injects messiness (nulls, duplicates, negative amounts,
-future-dated orders) so the cleaning pipeline in app.py has real work to do
-and the "Anomalous Records Purged" KPI is non-zero.
-"""
 
 import json
 import random
@@ -26,9 +14,7 @@ REGIONS = ["North", "South", "East", "West"]
 PLANS = ["Free", "Basic", "Premium"]
 CATEGORIES = ["Electronics", "Apparel", "Home", "Books", "Beauty"]
 
-# ---------------------------------------------------------------
-# 1. customer_profiles.json
-# ---------------------------------------------------------------
+
 profiles = []
 start = datetime(2025, 1, 1)
 for i in range(1, N_CUSTOMERS + 1):
@@ -49,9 +35,6 @@ profiles.append(profiles[3])  # exact duplicate
 with open("customer_profiles.json", "w") as f:
     json.dump(profiles, f, indent=2)
 
-# ---------------------------------------------------------------
-# 2. order_history.csv
-# ---------------------------------------------------------------
 orders = []
 order_id = 1
 for p in profiles[:N_CUSTOMERS]:
@@ -84,9 +67,6 @@ orders.append({"order_id": f"ORD{order_id:05d}", "customer_id": "CUST0005",
 orders_df = pd.DataFrame(orders)
 orders_df.to_csv("order_history.csv", index=False)
 
-# ---------------------------------------------------------------
-# 3. web_traffic_logs.csv
-# ---------------------------------------------------------------
 logs = []
 for p in profiles[:N_CUSTOMERS]:
     signup_dt = datetime.strptime(p["signup_date"], "%Y-%m-%d")

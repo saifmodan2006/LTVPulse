@@ -1,11 +1,3 @@
-"""
-The Multi-Source Customer Retention & Predictive LTV App
-----------------------------------------------------------
-Wraps a raw-data cleaning + cohort-retention + predictive-LTV pipeline
-inside an interactive Streamlit dashboard.
-
-    Run with:  streamlit run app.py
-"""
 
 import json
 from datetime import datetime
@@ -16,9 +8,6 @@ import plotly.express as px
 import streamlit as st
 from sklearn.linear_model import LinearRegression
 
-# ------------------------------------------------------------------
-# Page setup
-# ------------------------------------------------------------------
 st.set_page_config(page_title="Retention & Predictive LTV Engine", layout="wide")
 st.title("📊 Customer Retention & Predictive LTV Engine")
 st.sidebar.header("📁 Ingestion Control Panel")
@@ -33,12 +22,7 @@ st.sidebar.caption(
     "it produces messy versions of all three files for testing."
 )
 
-# ------------------------------------------------------------------
-# CACHED LOADERS
-# @st.cache_data means: if the exact same file bytes come in again,
-# Streamlit returns the stored result instead of re-parsing — so
-# re-running the script on every widget click doesn't re-read files.
-# ------------------------------------------------------------------
+
 @st.cache_data(show_spinner=False)
 def load_profiles(file_bytes: bytes) -> pd.DataFrame:
     data = json.loads(file_bytes.decode("utf-8"))
@@ -51,9 +35,6 @@ def load_csv(file_bytes: bytes) -> pd.DataFrame:
     return pd.read_csv(io.BytesIO(file_bytes))
 
 
-# ------------------------------------------------------------------
-# CACHED PIPELINE: cleaning + merging + anomaly detection
-# ------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def clean_and_merge(profiles_df: pd.DataFrame, orders_df: pd.DataFrame, traffic_df: pd.DataFrame):
     logs = []
@@ -104,9 +85,6 @@ def clean_and_merge(profiles_df: pd.DataFrame, orders_df: pd.DataFrame, traffic_
     return profiles_df, orders_df, traffic_df, merged, logs, anomalies_purged
 
 
-# ------------------------------------------------------------------
-# CACHED ANALYTICS: cohort retention + predictive LTV (linear regression)
-# ------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def compute_cohort_retention(merged: pd.DataFrame) -> pd.DataFrame:
     """
@@ -153,10 +131,6 @@ def compute_predicted_spend(merged: pd.DataFrame) -> pd.DataFrame:
 
     return pd.DataFrame(predictions).sort_values("cohort")
 
-
-# ------------------------------------------------------------------
-# MAIN FLOW
-# ------------------------------------------------------------------
 if profile_file and order_file and traffic_file:
 
     logs = ["[INGEST] All 3 required files received."]
@@ -187,7 +161,6 @@ if profile_file and order_file and traffic_file:
 
         st.success("Pipeline executed successfully — data cleaned, validated, and merged.")
 
-        # ---------------- KPI ROW ----------------
         total_revenue = merged["Amount_INR"].sum() if "Amount_INR" in merged.columns else 0
         active_cohorts = merged["cohort"].nunique() if "cohort" in merged.columns else 0
 
@@ -199,7 +172,6 @@ if profile_file and order_file and traffic_file:
 
         st.markdown("---")
 
-        # ---------------- INTERACTIVE PREDICTIVE PLOTTING ----------------
         st.subheader("📈 Cohort Analytics View")
 
         if active_cohorts == 0:
@@ -240,7 +212,6 @@ if profile_file and order_file and traffic_file:
         st.error(f"Ingestion break: {e}")
         logs.append(f"[ERROR] Pipeline halted: {str(e)}")
 
-    # ---------------- LIVE AUDIT LOG PANEL ----------------
     with st.expander("🛠️ System Data Cleaning Logs", expanded=True):
         for entry in logs:
             st.code(entry, language="bash")
